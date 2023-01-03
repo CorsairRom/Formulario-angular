@@ -1,8 +1,8 @@
 # AppEmpleados
-Este es un mini proyecto para estudiar Angular. 
+Este es un mini proyecto para repasar Angular. 
 
 ## Algunas cosas que veré
-En general estudiare toda la estructura de este lenguaje, asi que estos seran los contenidos que se veran en esta app:
+En general estudiare toda la estructura de este lenguaje que ya antes habia visto de forma algo vaga con ionic, asi que estos seran los contenidos que se veran en esta app:
 <hr>
 <li> Interpolacion
 <li> Binding

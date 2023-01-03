@@ -10,12 +10,15 @@ import { Empleado } from '../empleado.model';
 
 
 export class EmpleadoHijoCComponent implements OnInit {
-  
-  @Input() empleadoDeLista!:Empleado;
+  arrayCaracteristicas=[''];
+  @Input() empleadoDeLista!:Empleado; //uso ! para no bypassear el tipeo estricto, asi no debo inicializar la variable
   @Input() indice!:number;
   constructor() { }
   
   ngOnInit(): void {
+  }
+  agregarCaracteristicas(nuevaCaracteristicas:string){
+    this.arrayCaracteristicas.push(nuevaCaracteristicas)
   }
 
 }

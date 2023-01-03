@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="form-group row">
+        <div class="form-group col-md-3  form-floating">
+            <input type="text" id="caracteristica" class="form-control" #nuevaCaracteristica>
+            <label for="caracteristica">Caracteristica</label>
+        </div>
+        <div class="col">
+            <button (click)="agregaCaracteristicas(nuevaCaracteristica.value)" class="btn btn-success">Add Caracteristica</button>
+        </div>
+    </div>
+</div>

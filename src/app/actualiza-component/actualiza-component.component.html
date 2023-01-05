@@ -20,13 +20,9 @@
           <label for="salario">Salario</label>
         </div>
         <div class="col">
-          <button type="submit" class="btn btn-primary" (click)="agregarEmpleado()"> Registrar</button>
+          <button type="submit" class="btn btn-primary" (click)="actualizaEmpleado()"> Actualizar</button>
+          <button type="submit" class="btn btn-danger mx-2" (click)="eliminarEmpleado()"> Eliminar</button>
         </div>
       </form>
     </div>
   </div>
-  <br>
-  
-  <app-empleado-hijo-c *ngFor="let empleado of empleados; let i=index"[empleadoDeLista]="empleado" [indice]="i"></app-empleado-hijo-c>
-  
-  

@@ -2,9 +2,9 @@
     <div class="row">
       <div class="col">
         <div >
-          <a href="" [routerLink]="['/actualiza', indice]" >
           {{indice+1}} - {{empleadoDeLista.nombre}} {{empleadoDeLista.apellidos}} {{empleadoDeLista.cargo}} {{empleadoDeLista.salario}}
-        </a>
+          <a href="" [routerLink]="['/actualiza', indice]" [queryParams]="{accion:'1'}" class="btn btn-info btn-sm m-2"> Actualiza</a>
+          <a href="" [routerLink]="['/actualiza', indice]" [queryParams]="{accion:'2'}" class="btn btn-danger btn-sm"> Eliminar</a>
         </div>
         <app-caaracteristicas-empleado-c (caracteristicasEmpleados)="agregarCaracteristicas($event)"></app-caaracteristicas-empleado-c>
         <ul>
